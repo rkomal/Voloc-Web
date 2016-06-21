@@ -194,6 +194,7 @@ div.wrapper h6 {
     color: #CCCCCC;
 }
 
+
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -205,7 +206,7 @@ div.wrapper h6 {
     /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #3B0254;
+    background-color:#3B0254;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -213,21 +214,28 @@ div.wrapper h6 {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+	
+
 }
 /* Some styles for the meet the team iframe */
 
 .team-frame{
-    position: absolute;
-    width: 100%;
+    position: fixed;
     height: 100%;
+    width: 100%;
+    display: none;
     right: 0;
-    top: 0;
-    bottom: 0;
+    bottom:0;
     z-index: -999;
     left: 0; 
     border: none;
-    display: none;
 }
+
+iframe{
+    margin-left: 250px;
+    overflow: visible;
+}
+
 
 /* The navigation menu links */
 
@@ -237,22 +245,32 @@ div.wrapper h6 {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    border-style:solid;
+    border-width:1px 0px 1px 0px;
+    padding:15px;
+    font-size:25px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
-.active{
-    color: #fff;
+.closebtn
+{
+position:absolute;
+color:#FFFFFF;
+font-size:40px;
+right:0px;
+top:0px;
+cursor:pointer;
 }
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover,
 .offcanvas a:focus {
+	text-decoration:none;
     color: #f1f1f1;
+	border-width:1px 1px 1px 1px;
 }
 
 
