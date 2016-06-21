@@ -12,6 +12,10 @@ body {
     font-family: 'Open-Sans', sans-serif;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .addslide {
     transform: translate3d(0px, -250px, 0px);
 }
@@ -217,9 +221,9 @@ div.wrapper h6 {
 	
 
 }
-/* Some styles for the meet the team iframe */
 
-.team-frame{
+
+.changeframes{
     position: fixed;
     height: 100%;
     width: 100%;
